@@ -16,12 +16,12 @@ if( version === 'production' ) {
 export default {
     user: {
         list: {
-            url: host1 + '/v35/api/user'
+            url: host1 + '/v35/api/user/list'
         },
     },
-    file: {
+    store: {
         list: {
-            url: host1 + '/v35/api/file'
+            url: host1 + '/v35/api/store/list'
         },
     },
 }

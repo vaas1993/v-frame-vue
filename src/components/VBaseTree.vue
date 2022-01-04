@@ -23,6 +23,8 @@
             >
                 <template #default="scope">
                     <div :class="scope.data.getSource(config.value) === value ? 'text-primary' : ''">
+                        <v-icon :icon="scope.data.icon" v-if="!!scope.data.icon"></v-icon>
+
                         {{scope.data.getValue(config.label)}}
                     </div>
                 </template>
@@ -33,8 +35,10 @@
 </template>
 
 <script>
+import VIcon from "./VIcon";
 export default {
     name: "VBaseTree",
+    components: {VIcon},
     props: [
         'config',
         'load',

@@ -49,14 +49,14 @@ export default {
          */
         searchField: {
             type: String,
-            default: 'filter[name]'
+            default: 'name'
         },
         /**
          * 调用接口时，父节点ID的传递字段
          */
         parentField: {
             type: String,
-            default: 'filter[parent_id]'
+            default: 'parent_id'
         },
 
         defaultParentId: {
